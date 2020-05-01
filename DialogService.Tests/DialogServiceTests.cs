@@ -8,7 +8,6 @@ namespace DialogService.Tests
         [Fact]
         public void BasicDialogTest()
         {
-            throw new NotImplementedException();
         }
     }
 }
