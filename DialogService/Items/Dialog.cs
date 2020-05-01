@@ -12,7 +12,7 @@ namespace DialogService.Items
         /// <summary>
         /// Gets dialog buttons list
         /// </summary>
-        public List<Button> Buttons { get; private set; } = new List<Button>();
+        public List<IDialogItem> BottomPanel { get; private set; } = new List<IDialogItem>();
 
         public object Tag { get; set; }
 

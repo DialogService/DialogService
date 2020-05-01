@@ -15,8 +15,8 @@ namespace DialogService.Tests
             dialog.Items.Add(new Button("Click me"));
             dialog.Items.Add(new Label("This is the label!"));
 
-            dialog.Buttons.Add(new Button("OK"));
-            dialog.Buttons.Add(new Button("Cancel"));
+            dialog.BottomPanel.Add(new Button("OK"));
+            dialog.BottomPanel.Add(new Button("Cancel"));
 
             dialogService.Show(dialog);
         }
