@@ -4,9 +4,7 @@ namespace DialogService.Win32
 {
     public class Win32DialogService : IDialogService
     {
-        public DialogResult Result => throw new NotImplementedException();
-
-        public void Show()
+        public void Show(Dialog dialog)
         {
             throw new NotImplementedException();
         }
