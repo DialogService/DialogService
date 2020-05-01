@@ -2,10 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+	<IsWindows Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Windows)))' == 'true'">true</IsWindows>
+	<IsOSX Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::OSX)))' == 'true'">true</IsOSX>
+	<IsLinux Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Linux)))' == 'true'">true</IsLinux>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\DialogService\DialogService.csproj" />
+	<ProjectReference Condition="'$(IsWindows)'=='true'" Include="..\DialogService.Win32\DialogService.Win32.csproj" />
+	<ProjectReference Condition="'$(IsOSX)'=='true'" Include="..\DialogService.MacOS\DialogService.MacOS.csproj" />
+	<ProjectReference Condition="'$(IsLinux)'=='true'" Include="..\DialogService.Linux\DialogService.Linux.csproj" />
   </ItemGroup>
 
 </Project>
