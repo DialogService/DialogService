@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DialogService", "DialogService\DialogService.csproj", "{7AA0F64E-13EE-4AF9-B4D3-1E679A624893}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DialogService.Tests", "DialogService.Tests\DialogService.Tests.csproj", "{A93761E5-F1F3-4165-A87C-A44D8DFA3E57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7AA0F64E-13EE-4AF9-B4D3-1E679A624893}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AA0F64E-13EE-4AF9-B4D3-1E679A624893}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AA0F64E-13EE-4AF9-B4D3-1E679A624893}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A93761E5-F1F3-4165-A87C-A44D8DFA3E57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A93761E5-F1F3-4165-A87C-A44D8DFA3E57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A93761E5-F1F3-4165-A87C-A44D8DFA3E57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A93761E5-F1F3-4165-A87C-A44D8DFA3E57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
