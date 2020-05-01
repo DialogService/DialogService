@@ -12,8 +12,11 @@ namespace DialogService.Tests
             var dialogService = CrossPlatform.DialogService.Get();
             var dialog = new Dialog("Test Dialog");
 
-            dialog.Items.Add(new Button("Click me"));
-            dialog.Items.Add(new Label("This is the label!"));
+            for (int i = 0; i < 5; i++)
+            {
+                dialog.Items.Add(new Button("Click me"));
+                dialog.Items.Add(new Label("This is the label!"));
+            }
 
             dialog.BottomPanel.Add(new Button("OK"));
             dialog.BottomPanel.Add(new Button("Cancel"));
