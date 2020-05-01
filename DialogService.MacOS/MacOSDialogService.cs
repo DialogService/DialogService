@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DialogService.Items;
+using System;
 
 namespace DialogService.MacOS
 {

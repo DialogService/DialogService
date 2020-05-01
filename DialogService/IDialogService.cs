@@ -1,4 +1,6 @@
-﻿namespace DialogService
+﻿using DialogService.Items;
+
+namespace DialogService
 {
     /// <summary>
     /// Defines basic dialog-related functionality

@@ -1,9 +1,8 @@
-﻿using DialogService.Items;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DialogService
+namespace DialogService.Items
 {
     /// <summary>
     /// Dialog model
