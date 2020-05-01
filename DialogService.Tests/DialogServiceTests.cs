@@ -9,7 +9,8 @@ namespace DialogService.Tests
         public void BasicDialogTest()
         {
             var dialogService = CrossPlatform.DialogService.Get();
-            dialogService.Show();
+            var dialog = new Dialog("Test Dialog");
+            dialogService.Show(dialog);
         }
     }
 }
