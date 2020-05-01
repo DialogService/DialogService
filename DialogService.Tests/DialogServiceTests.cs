@@ -8,6 +8,8 @@ namespace DialogService.Tests
         [Fact]
         public void BasicDialogTest()
         {
+            var dialogService = CrossPlatform.DialogService.Get();
+            dialogService.Show();
         }
     }
 }
