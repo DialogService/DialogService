@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace DialogService
+namespace DialogService.CrossPlatform
 {
-    public class CrossPlatform
+    public class DialogService
     {
         public static IDialogService Get()
         {
