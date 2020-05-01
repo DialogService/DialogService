@@ -1,9 +1,9 @@
 ﻿namespace DialogService.Items
 {
     /// <summary>
-    /// Defines an item with content
+    /// Defines an item with a content
     /// </summary>
-    public interface IContentItem : IContentItem<object>
+    public interface IContentItem : IContentItem<IDialogItem>
     { }
 
     /// <summary>

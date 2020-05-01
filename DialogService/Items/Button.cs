@@ -8,7 +8,7 @@ namespace DialogService.Items
     {
         public object Tag { get; set; }
 
-        public object Content { get; set; }
+        public IDialogItem Content { get; set; }
 
         /// <summary>
         /// Creates an empty button
@@ -18,12 +18,19 @@ namespace DialogService.Items
         }
 
         /// <summary>
-        /// Creates button with specific content
+        /// Creates a button with specific content
         /// </summary>
         /// <param name="content">Content</param>
-        public Button(string content) : this()
+        public Button(IDialogItem content) : this()
         {
             Content = content;
         }
+
+        /// <summary>
+        /// Creates a button with new instance of <see ref="Label"/>
+        /// </summary>
+        /// <param name="textLabel"></param>
+        public Button(string textLabel) : this(new Label(textLabel))
+        { }
     }
 }
