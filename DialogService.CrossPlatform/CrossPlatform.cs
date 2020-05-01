@@ -9,7 +9,7 @@ namespace DialogService.CrossPlatform
         /// </summary>
         public static IDialogService Get()
         {
-            return PlatformImplementation.Get();
+            return new PlatformImplementation().Get();
         }
     }
 }
