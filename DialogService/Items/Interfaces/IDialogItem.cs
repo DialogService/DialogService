@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DialogService
+namespace DialogService.Items
 {
     /// <summary>
-    /// Defines dialog item
+    /// Defines a dialog item
     /// </summary>
     public interface IDialogItem
     {

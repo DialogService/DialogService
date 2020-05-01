@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DialogService.Items;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -7,22 +8,18 @@ namespace DialogService
     /// <summary>
     /// Dialog model
     /// </summary>
-    public class Dialog
+    public class Dialog : IDialogItem, ITitleItem, IHolderItem
     {
-        /// <summary>
-        /// Gets or sets dialog's title text
-        /// </summary>
-        public string Title { get; set; }
-
-        /// <summary>
-        /// Gets dialog items list
-        /// </summary>
-        public List<IDialogItem> Items { get; private set; } = new List<IDialogItem>();
-
         /// <summary>
         /// Gets dialog buttons list
         /// </summary>
         public List<Button> Buttons { get; private set; } = new List<Button>();
+
+        public object Tag { get; set; }
+
+        public string Title { get; set; }
+
+        public List<IDialogItem> Items { get; private set; } = new List<IDialogItem>();
 
         /// <summary>
         /// Creates an empty dialog

@@ -1,3 +1,4 @@
+using DialogService.Items;
 using System;
 using Xunit;
 

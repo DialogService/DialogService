@@ -2,23 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DialogService
+namespace DialogService.Items
 {
     public class Button : IDialogItem, IContentItem
     {
-        private object tag;
-        public object Tag 
-        {
-            get => tag;
-            set => tag = value;
-        }
+        public object Tag { get; set; }
 
-        private object content;
-        public object Content 
-        {
-            get => content;
-            set => content = value;
-        }
+        public object Content { get; set; }
 
         /// <summary>
         /// Creates an empty button
