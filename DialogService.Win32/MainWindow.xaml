@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DialogService.Win32"
         mc:Ignorable="d"
-        Title="Placeholder" MinHeight="250" MinWidth="350" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
+        Title="Placeholder" MinHeight="225" MinWidth="400" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
     <Grid Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}">
         <Grid Margin="0,0,0,50">
             <ScrollViewer VerticalScrollBarVisibility="Auto">
