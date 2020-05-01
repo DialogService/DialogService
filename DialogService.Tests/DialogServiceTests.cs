@@ -13,6 +13,7 @@ namespace DialogService.Tests
             var dialog = new Dialog("Test Dialog");
 
             dialog.Items.Add(new Button("Click me"));
+            dialog.Items.Add(new Label("This is the label!"));
 
             dialog.Buttons.Add(new Button("OK"));
             dialog.Buttons.Add(new Button("Cancel"));
