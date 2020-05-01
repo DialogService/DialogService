@@ -15,9 +15,9 @@ namespace DialogService.Win32
             if (from.GetType() == TypeFrom)
             {
                 var label = (Label)from;
-                var ctrl = new System.Windows.Controls.Label();
-                ctrl.Content = label.Content;
-                ctrl.Margin = new System.Windows.Thickness(5);
+                var ctrl = new System.Windows.Controls.TextBlock();
+                ctrl.Text = label.Content;
+                ctrl.Margin = new System.Windows.Thickness(3);
                 return ctrl;
             }
 

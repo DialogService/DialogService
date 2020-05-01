@@ -17,7 +17,8 @@ namespace DialogService.Win32
                 var btn = (Button)from;
                 var ctrl = new System.Windows.Controls.Button();
                 ctrl.Content = converter.GetControl(btn.Content);
-                ctrl.Margin = new System.Windows.Thickness(5);
+                ctrl.Margin = new System.Windows.Thickness(3);
+                ctrl.MinWidth = 80;
                 return ctrl;
             }
 
