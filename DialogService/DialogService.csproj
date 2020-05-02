@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
     <Authors>Yaroslav Kibysh</Authors>
     <Company />
     <Description>Cross-platform system dialogs interface</Description>
@@ -11,6 +11,7 @@
     <PackageIcon>DialogService Logo.png</PackageIcon>
     <RepositoryUrl>https://github.com/DialogService/DialogService</RepositoryUrl>
     <PackageReleaseNotes>Early testing</PackageReleaseNotes>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
