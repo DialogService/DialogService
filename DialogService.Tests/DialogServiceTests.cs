@@ -10,14 +10,18 @@ namespace DialogService.Tests
         [Fact]
         public void PlatformTest()
         {
-            var dialogService = CrossPlatform.DialogService.Get();
+            var dsBuilder = new DialogPlatformBuilder();
+            dsBuilder.AddPlatform<Win32.PlatformImplementation>();
+            dsBuilder.AddPlatform<Linux.PlatformImplementation>();
+            dsBuilder.AddPlatform<MacOS.PlatformImplementation>();
+            var dialogService = dsBuilder.GetService();
 
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
-                Assert.Contains("Win32", dialogService.GetType().Name);
+                Assert.Equal(typeof(Win32.Win32DialogService), dialogService.GetType());
             else if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
-                Assert.Contains("Linux", dialogService.GetType().Name);
+                Assert.Equal(typeof(Linux.LinuxDialogService), dialogService.GetType());
             else if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
-                Assert.Contains("MacOS", dialogService.GetType().Name);
+                Assert.Equal(typeof(MacOS.MacOSDialogService), dialogService.GetType());
             else throw new NotImplementedException();
         }
     }
