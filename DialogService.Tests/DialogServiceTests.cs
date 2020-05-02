@@ -1,5 +1,6 @@
 using DialogService.Items;
 using System;
+using System.Runtime.InteropServices;
 using Xunit;
 
 namespace DialogService.Tests
@@ -7,21 +8,17 @@ namespace DialogService.Tests
     public class DialogServiceTests
     {
         [Fact]
-        public void BasicDialogTest()
+        public void PlatformTest()
         {
             var dialogService = CrossPlatform.DialogService.Get();
-            var dialog = new Dialog("Test Dialog");
 
-            for (int i = 0; i < 5; i++)
-            {
-                dialog.Items.Add(new Button("Click me"));
-                dialog.Items.Add(new Label("This is the label!"));
-            }
-
-            dialog.BottomPanel.Add(new Button("OK"));
-            dialog.BottomPanel.Add(new Button("Cancel"));
-
-            dialogService.Show(dialog);
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+                Assert.Contains("Win32", dialogService.GetType().Name);
+            else if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
+                Assert.Contains("Linux", dialogService.GetType().Name);
+            else if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
+                Assert.Contains("MacOS", dialogService.GetType().Name);
+            else throw new NotImplementedException();
         }
     }
 }
