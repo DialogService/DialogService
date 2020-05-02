@@ -12,7 +12,8 @@ namespace DialogService
         /// <summary>
         /// Gets target platforms
         /// </summary>
-        public abstract RuntimePlatform Platform { get; }
+        public abstract IEnumerable<RuntimePlatform> Platform { get; }
+
         /// <summary>
         /// Gets IDialogService implementation
         /// </summary>
