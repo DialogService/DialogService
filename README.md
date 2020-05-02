@@ -1,6 +1,18 @@
 # .NET Dialog Service [![Build status](https://ci.appveyor.com/api/projects/status/g3jr0r74wmgmm90h?svg=true)](https://ci.appveyor.com/project/feel-the-dz3n/dialogservice)
 This library is the replacement for MessageBoxes and TaskDialogs and aims to be as simple as possible.
 
+### Developing & building
+
+1. Clone this repository
+```
+git clone https://github.com/feel-the-dz3n/DialogService
+```
+2. Use XUnit test to test your code/some other code
+2. Run XUnit test **(you may use some additional arguments from documentation)**
+```
+dotnet test
+```
+
 ### How to use library in your project
 1. Go to you solution directory
 2. Clone this repository
@@ -8,11 +20,11 @@ This library is the replacement for MessageBoxes and TaskDialogs and aims to be 
 git clone https://github.com/feel-the-dz3n/DialogService
 ```
 2. Go to your project directory 
-3. Reference DialogService **(ensure that directory in command is correct)**
+3. Reference ``DialogService`` **(ensure that directory in command is correct)**
 ```
 dotnet add reference ../DialogService/DialogService/DialogService.csproj
 ```
-3. Reference DialogService.CrossPlatform **(ensure that directory in command is correct)**
+3. Reference ``DialogService.CrossPlatform`` **(ensure that directory in command is correct)**
 ```
 dotnet add reference ../DialogService/DialogService.CrossPlatform/DialogService.CrossPlatform.csproj
 ```
