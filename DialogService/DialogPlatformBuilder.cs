@@ -44,7 +44,7 @@ namespace DialogService
 
             foreach (var platform in platforms)
             {
-                if (platform.Platform == rtPlatform)
+                if (platform.Platform.Contains(rtPlatform))
                     return platform.Get();
             }
 
