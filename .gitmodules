@@ -1,0 +1,3 @@
+[submodule "DialogService.Media"]
+	path = DialogService.Media
+	url = https://github.com/DialogService/DialogService.Media
