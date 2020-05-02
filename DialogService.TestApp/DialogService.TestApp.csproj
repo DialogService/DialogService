@@ -6,9 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="DialogService.Win32" Version="0.1.4" />
-    <PackageReference Include="DialogService.Linux" Version="0.1.4" />
-    <PackageReference Include="DialogService.MacOS" Version="0.1.4" />
+    <PackageReference Include="DialogService.Win32" Version="0.1.5" />
+    <PackageReference Include="DialogService.Linux" Version="0.1.5" />
+    <PackageReference Include="DialogService.MacOS" Version="0.1.5" />
   </ItemGroup>
 
   <ItemGroup>
