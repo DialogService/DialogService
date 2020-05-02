@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DialogService", "DialogService\DialogService.csproj", "{7AA0F64E-13EE-4AF9-B4D3-1E679A624893}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DialogService", "DialogService\DialogService.csproj", "{7AA0F64E-13EE-4AF9-B4D3-1E679A624893}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DialogService.Tests", "DialogService.Tests\DialogService.Tests.csproj", "{A93761E5-F1F3-4165-A87C-A44D8DFA3E57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DialogService.Tests", "DialogService.Tests\DialogService.Tests.csproj", "{A93761E5-F1F3-4165-A87C-A44D8DFA3E57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DialogService.CrossPlatform", "DialogService.CrossPlatform\DialogService.CrossPlatform.csproj", "{0A07CDF5-E597-4F26-B955-40F469AEC071}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DialogService.CrossPlatform", "DialogService.CrossPlatform\DialogService.CrossPlatform.csproj", "{0A07CDF5-E597-4F26-B955-40F469AEC071}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DialogService.Win32", "DialogService.Win32\DialogService.Win32.csproj", "{2993A448-29B4-4FB7-81BB-69DB97CC7956}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DialogService.Win32", "DialogService.Win32\DialogService.Win32.csproj", "{2993A448-29B4-4FB7-81BB-69DB97CC7956}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DialogService.Linux", "DialogService.Linux\DialogService.Linux.csproj", "{E62973C9-3921-4E29-B7C6-34B673B5E329}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DialogService.Linux", "DialogService.Linux\DialogService.Linux.csproj", "{E62973C9-3921-4E29-B7C6-34B673B5E329}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DialogService.MacOS", "DialogService.MacOS\DialogService.MacOS.csproj", "{EDE80B1C-8AAD-4E4E-9B0D-DB890312A4E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DialogService.MacOS", "DialogService.MacOS\DialogService.MacOS.csproj", "{EDE80B1C-8AAD-4E4E-9B0D-DB890312A4E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DialogService.TestApp", "DialogService.TestApp\DialogService.TestApp.csproj", "{896CAF0B-3E07-4D8E-81C1-FECE546F6D49}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{EDE80B1C-8AAD-4E4E-9B0D-DB890312A4E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDE80B1C-8AAD-4E4E-9B0D-DB890312A4E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDE80B1C-8AAD-4E4E-9B0D-DB890312A4E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{896CAF0B-3E07-4D8E-81C1-FECE546F6D49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{896CAF0B-3E07-4D8E-81C1-FECE546F6D49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{896CAF0B-3E07-4D8E-81C1-FECE546F6D49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{896CAF0B-3E07-4D8E-81C1-FECE546F6D49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
