@@ -11,6 +11,7 @@ namespace DialogService
         /// Shows a dialog
         /// </summary>
         /// <param name="dialog">Dialog model</param>
-        void Show(Dialog dialog);
+        /// <returns>Summary of dialog interaction <see cref="IDialogResult"/></returns>
+        IDialogResult Show(Dialog dialog);
     }
 }
