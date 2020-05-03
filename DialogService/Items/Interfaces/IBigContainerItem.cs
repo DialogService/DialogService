@@ -7,11 +7,11 @@ namespace DialogService.Items
     /// <summary>
     /// Defines an item that can hold one or more items inside of it
     /// </summary>
-    public interface IHolderItem : IDialogItem
+    public interface IBigContainerItem : IDialogItem
     {
         /// <summary>
-        /// Items of current item
+        /// Gets items list of current item
         /// </summary>
-        List<IDialogItem> Items { get; }
+        IDialogItemList Items { get; }
     }
 }
