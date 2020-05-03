@@ -5,20 +5,29 @@ using System.Text;
 namespace DialogService.Items
 {
     /// <summary>
-    /// Dialog model
+    /// A dialog model
     /// </summary>
-    public class Dialog : IDialogItem, ITitleItem, IHolderItem
+    public class Dialog : IDialogItem, ITitleItem, IBigContainerItem
     {
         /// <summary>
-        /// Gets dialog buttons list
+        /// Gets dialog bottom panel items list
         /// </summary>
-        public List<IDialogItem> BottomPanel { get; private set; } = new List<IDialogItem>();
+        public IDialogItemList BottomPanel => bottomPanel.Items;
+        private Panel bottomPanel = new Panel();
+
+        /// <summary>
+        /// Gets dialog items list
+        /// </summary>
+        public IDialogItemList Items => itemsPanel.Items;
+        private Panel itemsPanel = new Panel();
 
         public object Tag { get; set; }
 
+        /// <summary>
+        /// Gets or sets dialog title
+        /// </summary>
         public string Title { get; set; }
 
-        public List<IDialogItem> Items { get; private set; } = new List<IDialogItem>();
 
         /// <summary>
         /// Creates an empty dialog
