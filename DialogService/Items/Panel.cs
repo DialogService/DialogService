@@ -10,6 +10,12 @@ namespace DialogService.Items
     public class Panel : IDialogItem, IBigContainerItem
     {
         public object Tag { get; set; }
+
+        /// <summary>
+        /// Gets or sets items flow
+        /// </summary>
+        public ItemsFlow Flow { get; set; } = ItemsFlow.TopBottom;
+
         /// <summary>
         /// Gets items list
         /// </summary>
